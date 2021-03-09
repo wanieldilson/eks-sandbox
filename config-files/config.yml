@@ -1,0 +1,17 @@
+discovery:
+  exportedTagsOnMetrics:
+    ec2:
+      - Name
+
+  jobs:
+  - type: ec2
+    regions:
+      - eu-west-2
+    enableMetricData: true
+    metrics:
+      - name: CPUUtilization
+        statistics:
+        - Average
+        period: 300
+        length: 600
+    
