@@ -17,7 +17,6 @@ variable "aws_secret_key" {
 
 variable "owner-email" {
   type    = string
-  default = "pttp@justice.gov.uk"
 }
 
 variable "cluster-name" {
